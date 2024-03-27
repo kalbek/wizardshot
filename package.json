@@ -1,0 +1,22 @@
+{
+  "name": "wizardshot",
+  "version": "1.0.0",
+  "description": "A Helpjuice internship test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalbek/wizardshot.git"
+  },
+  "author": "kaleb bekele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalbek/wizardshot/issues"
+  },
+  "homepage": "https://github.com/kalbek/wizardshot#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
