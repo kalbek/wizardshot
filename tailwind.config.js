@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        muted: "#363636",
+        muted: "#666666",
         black: "#000000",
+        darkGray: "#4F4F4F",
         blackTransparent: "rgba(0, 0, 0, 0.56)",
-        buttonPrimary: "#363636",
         buttonPrimary: "#18181C",
         buttonSecondary: "#B900",
       },
@@ -21,6 +21,10 @@ module.exports = {
         tight: "1.2",
         normal: "1.3",
         loose: "1.4",
+      },
+      fontSize: {
+        sm: "14px",
+        base: "1rem",
       },
     },
   },

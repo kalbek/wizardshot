@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 768px) {
+  #navigation {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  font-weight: 600;
+  font-style: bold;
+}
