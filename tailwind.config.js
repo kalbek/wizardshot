@@ -6,9 +6,10 @@ module.exports = {
       colors: {
         muted: "#363636",
         black: "#000000",
-        black: "#000000",
         blackTransparent: "rgba(0, 0, 0, 0.56)",
         buttonPrimary: "#363636",
+        buttonPrimary: "#18181C",
+        buttonSecondary: "#B900",
       },
     },
   },
