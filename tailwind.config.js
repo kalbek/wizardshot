@@ -5,11 +5,11 @@ module.exports = {
     extend: {
       colors: {
         muted: "#666666",
-        black: "#000000",
         darkGray: "#4F4F4F",
         blackTransparent: "rgba(0, 0, 0, 0.56)",
         buttonPrimary: "#18181C",
         buttonSecondary: "#B900",
+        lightGray: "#1E293B",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
