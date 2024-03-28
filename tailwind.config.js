@@ -18,13 +18,21 @@ module.exports = {
         mulish: ["Mulish", "sans-serif"],
       },
       lineHeight: {
+        extratight: "1.1",
         tight: "1.2",
         normal: "1.3",
         loose: "1.4",
+        extraloose: "1.6",
       },
       fontSize: {
         sm: "14px",
         base: "1rem",
+        big: "20px",
+        large: "40px",
+        extralarge: "58px",
+      },
+      maxWidth: {
+        extralarge: "750px",
       },
     },
   },

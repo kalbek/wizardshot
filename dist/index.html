@@ -38,7 +38,9 @@
       <!-- Login section and install wizardshot button-->
       <section id="login" class="hidden absolute right-28 top-1/2 md:top-5">
         <div class="flex items-center gap-3.5">
-          <p id="login-text" class="text-muted text-base mt-6">Login</p>
+          <p id="login-text" class="text-muted text-base mt-6">
+            <a href="#">Login</a>
+          </p>
 
           <div
             class="flex gap-1 flex-col md:flex-col-reverse items-center mt-7 md:mt-0"
@@ -47,11 +49,12 @@
               class="flex justify-center items-center gap-2 bg-buttonPrimary px-4 py-2.5 rounded-lg"
             >
               <img src="./assets/shared/chrome-icon.svg" alt="chrome icon" />
-              <p
-                class="text-white font-mulish font-bold w-auto text-left text-sm"
+              <a
+                class="text-white font-mulish font-bold w-auto text-left text-sm leading-extraloose"
+                href="#"
               >
                 Install Wizardshot
-              </p>
+              </a>
             </button>
             <div class="flex gap-1">
               <p class="text-lg font-bold text-black schoolbell-regular">
@@ -89,5 +92,32 @@
         <div class="w-full h-px bg-gray-300 md:hidden"></div>
       </nav>
     </header>
+    <main class="flex flex-col items-center overflow-hidden">
+      <!-- headings -->
+      <h1
+        class="font-extrabold ml-4 mr-6 text-center text-large text-gray-900 md:text-extralarge leading-tight md:leading-extratight font-jakarta-sans max-w-1/2 md:max-w-extralarge mt-16"
+      >
+        Your Magic Wand for Instant Documentation
+      </h1>
+      <h3
+        class="font-semibold text-muted uppercase text-big md:text-base leading-loose md:leading-normal mt-2.5 text-center px-12"
+      >
+        Turn ANY process into a simple step-by step Guide
+      </h3>
+      <!-- install windshot button -->
+      <div class="flex flex-col gap-1 items-center mt-4 md:mt-8">
+        <button
+          class="flex justify-center items-center gap-2 bg-buttonPrimary px-6 py-2.5 rounded-lg"
+        >
+          <a
+            class="text-white font-mulish font-bold w-auto text-left text-sm leading-extraloose"
+            href="#"
+          >
+            Install Wizardshot
+          </a>
+          <img src="./assets/shared/right-arrow.svg " alt="right arrow" />
+        </button>
+      </div>
+    </main>
   </body>
 </html>

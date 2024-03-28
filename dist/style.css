@@ -568,8 +568,32 @@ video {
   top: 50%;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-2\.5 {
+  margin-top: 0.625rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -645,6 +669,10 @@ video {
   gap: 0.875rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -657,6 +685,11 @@ video {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-4 {
@@ -710,6 +743,14 @@ video {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.font-jakarta-sans {
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+
 .font-mulish {
   font-family: Mulish, sans-serif;
 }
@@ -720,6 +761,14 @@ video {
 
 .text-base {
   font-size: 1rem;
+}
+
+.text-big {
+  font-size: 20px;
+}
+
+.text-large {
+  font-size: 40px;
 }
 
 .text-lg {
@@ -735,8 +784,28 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-extraloose {
+  line-height: 1.6;
+}
+
+.leading-loose {
+  line-height: 1.4;
+}
+
+.leading-tight {
+  line-height: 1.2;
 }
 
 .text-black {
@@ -751,6 +820,11 @@ video {
 .text-darkGray {
   --tw-text-opacity: 1;
   color: rgb(79 79 79 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-lightGray {
@@ -789,6 +863,10 @@ video {
   #login-text {
     display: none;
   }
+
+  #navigation {
+    height: 100vh;
+  }
 }
 
 .schoolbell-regular {
@@ -814,6 +892,10 @@ video {
     margin-top: 2.5rem;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -824,6 +906,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:max-w-extralarge {
+    max-width: 750px;
   }
 
   .md\:flex-col-reverse {
@@ -848,5 +934,21 @@ video {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+  }
+
+  .md\:text-extralarge {
+    font-size: 58px;
+  }
+
+  .md\:leading-extratight {
+    line-height: 1.1;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.3;
   }
 }

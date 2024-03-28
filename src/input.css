@@ -18,6 +18,9 @@
   #login-text {
     display: none;
   }
+  #navigation {
+    height: 100vh;
+  }
 }
 
 .schoolbell-regular {
