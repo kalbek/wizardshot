@@ -34,6 +34,14 @@ module.exports = {
       maxWidth: {
         extralarge: "750px",
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to bottom, rgba(171, 150, 248, 1) 0%, rgba(217, 152, 226, 1) 50%, rgba(255, 153, 208, 1) 100%)",
+      },
+      height: {
+        smallVideoFrame: "247px",
+        largeVideoFrame: "829px",
+      },
     },
   },
   plugins: [],
