@@ -11,6 +11,7 @@ module.exports = {
         buttonPrimary: "#18181C",
         buttonSecondary: "#B900",
         lightGray: "#1E293B",
+        categoryGray: "#F3F3F3",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
