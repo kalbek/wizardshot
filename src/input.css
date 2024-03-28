@@ -7,6 +7,22 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  /* .visible {
+    display: block;
+  }
+  #close {
+    display: none;
+  } */
+  /* for larger screens, display login section on default */
+}
+@media (max-width: 768px) {
+  /* .visible {
+    display: block;
+  } */
+  #login {
+    display: none;
+  }
+  /* for small screens, hide login section on default */
 }
 
 .schoolbell-regular {
