@@ -36,7 +36,10 @@
         />
       </section>
       <!-- Login section and install wizardshot button-->
-      <section id="login" class="hidden absolute right-28 top-1/2 md:top-5">
+      <section
+        id="login"
+        class="absolute hidden right-1/4 md:right-28 top-1/2 mt-8 md:mt-0 md:top-5"
+      >
         <div class="flex items-center gap-3.5">
           <p id="login-text" class="text-muted text-base mt-6">
             <a href="#">Login</a>
@@ -67,7 +70,7 @@
       <!-- Navigations (mobile and desktop) -->
       <nav
         id="navigation"
-        class="hidden w-full md:w-auto md:flex flex-col md:absolute top-1 mt-5 md:mt-10"
+        class="w-full hidden md:w-auto md:flex flex-col md:absolute top-1 mt-5 md:mt-10"
       >
         <div class="w-full h-px bg-gray-300 md:hidden"></div>
         <ul
@@ -104,7 +107,7 @@
       >
         Turn ANY process into a simple step-by step Guide
       </h3>
-      <!-- install windshot button -->
+      <!-- Wizardshot install button -->
       <div class="flex flex-col gap-1 items-center mt-4 md:mt-8">
         <button
           class="flex justify-center items-center gap-2 bg-buttonPrimary px-6 py-2.5 rounded-lg"
@@ -119,10 +122,12 @@
         </button>
       </div>
       <!-- video frame -->
-      <div class="bg-custom-gradient rounded-2xl relative mt-16 md:mt-14">
+      <div
+        class="bg-custom-gradient rounded-2xl relative mt-24 md:mt-20 md:w-9/12 mx-6"
+      >
         <video
           poster="./assets/shared/hero-tutorial-vid.png"
-          class="object-cover h-48 w-96 md:h-largeVideoFrame md:w-auto p-2.5 rounded-3xl md:rounded-lg"
+          class="object-cover h-48 w-96 md:h-largeVideoFrame md:w-auto p-2.5 rounded md:rounded-2xl"
         ></video>
         <img
           src="./assets/shared/curved-arrow.svg"
@@ -135,6 +140,15 @@
           It only takes 3 clicks to publish your first tutorial
         </p>
       </div>
+      <!-- features section -->
+      <section class="w-10/12 md:w-6/12 mt-20 md:py-8">
+        <h2
+          class="leading-extratight md:leading-tight text-bigger md:text-large text-gray-900 font-jakarta-sans font-extrabold text-center"
+        >
+          Say <u>Goodbye To Writing Docs</u>, and Hello To Wizardshot Doing it
+          for YOU.
+        </h2>
+      </section>
     </main>
   </body>
 </html>

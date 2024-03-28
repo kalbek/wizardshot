@@ -28,6 +28,7 @@ module.exports = {
         sm: "14px",
         base: "1rem",
         big: "20px",
+        bigger: "32px",
         large: "40px",
         extralarge: "58px",
       },
