@@ -3,26 +3,21 @@
 @tailwind utilities;
 
 @media (min-width: 768px) {
+  /* on larger screens align the navigation menu on the middle of x-axis by default */
   #navigation {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* .visible {
+  /* for larger screens, make the login section always visible  */
+  #login {
     display: block;
   }
-  #close {
-    display: none;
-  } */
-  /* for larger screens, display login section on default */
 }
 @media (max-width: 768px) {
-  /* .visible {
-    display: block;
-  } */
-  #login {
+  /* for smaller screen, always hide the login text */
+  #login-text {
     display: none;
   }
-  /* for small screens, hide login section on default */
 }
 
 .schoolbell-regular {

@@ -576,12 +576,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .flex {
@@ -662,6 +662,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-1 {
@@ -758,32 +763,31 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.outline {
+  outline-style: solid;
+}
+
 @media (min-width: 768px) {
+  /* on larger screens align the navigation menu on the middle of x-axis by default */
+
   #navigation {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  /* .visible {
+  /* for larger screens, make the login section always visible  */
+
+  #login {
     display: block;
   }
-  #close {
-    display: none;
-  } */
-
-  /* for larger screens, display login section on default */
 }
 
 @media (max-width: 768px) {
-  /* .visible {
-    display: block;
-  } */
+  /* for smaller screen, always hide the login text */
 
-  #login {
+  #login-text {
     display: none;
   }
-
-  /* for small screens, hide login section on default */
 }
 
 .schoolbell-regular {
@@ -803,6 +807,10 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:mt-12 {
