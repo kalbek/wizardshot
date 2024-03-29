@@ -49,6 +49,8 @@ module.exports = {
           "linear-gradient(to bottom, rgba(171, 150, 248, 1) 0%, rgba(217, 152, 226, 1) 50%, rgba(255, 153, 208, 1) 100%)",
         "categories-gradient":
           "linear-gradient(to right, rgba(68, 255, 154, 1) 0%, rgba(68, 176, 255, 1) 23%, rgba(100, 127, 255, 1) 35%,rgba(139, 68, 255, 1) 49%,  rgba(255, 102, 68, 1) 74%, rgba(235, 255, 112, 1) 100%)",
+        "free-unlimited-grad":
+          "linear-gradient(to right, rgba(240, 251, 185, 1) 0%, rgba(251, 179, 160, 1) 29%, rgba(191, 162, 253, 1) 53%,rgba(164, 208, 252, 1) 75%,  rgba(159, 233, 226, 1) 84%, rgba(159, 250, 206, 1) 100%)",
       },
       height: {
         smallVideoFrame: "247px",
