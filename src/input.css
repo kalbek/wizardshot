@@ -58,6 +58,13 @@
   align-items: end;
 }
 
+.colstartr {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  /* align-items: start; */
+}
+
 .font-jakarta-sans {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
