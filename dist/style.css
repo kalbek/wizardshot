@@ -863,6 +863,14 @@ video {
   width: 13rem;
 }
 
+.w-\[100vw\] {
+  width: 100vw;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-48 {
   max-width: 12rem;
 }
@@ -1566,6 +1574,15 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:max-w-3xl {
