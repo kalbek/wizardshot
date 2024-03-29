@@ -901,6 +901,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1592,6 +1596,10 @@ video {
 
   .md\:flex-col-reverse {
     flex-direction: column-reverse;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
   }
 
   .md\:justify-end {
