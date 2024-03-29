@@ -7,6 +7,7 @@ module.exports = {
         muted: "#666666",
         darkGray: "#4F4F4F",
         graySecondary: "#212020",
+        mutedSecondary: "#98A2B3",
         grayBase: "#363636",
         darkBaseGray: "#0F172A",
         blackTransparent: "rgba(0, 0, 0, 0.56)",
