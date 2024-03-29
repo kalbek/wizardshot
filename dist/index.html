@@ -123,7 +123,7 @@
       </div>
       <!-- video frame -->
       <div
-        class="bg-custom-gradient rounded-2xl relative mt-24 md:mt-20 md:w-9/12 mx-6"
+        class="bg-custom-gradient rounded-2xl relative mt-24 md:mt-20 md:max-w-9/12 mx-6"
       >
         <video
           poster="./assets/shared/hero-tutorial-vid.png"
@@ -150,68 +150,124 @@
         </h2>
         <!-- categories card section -->
         <div
-          class="my-10 flex flex-col md:flex-row w-9/12 justify-between items-center md:w-10/12 gap-24"
+          class="my-10 flex flex-col md:flex-row w-9/12 justify-between items-center outline md:w-10/12 gap-8"
         >
-          <div class="flex flex-col items-start gap-4">
+          <!-- Click capture category (card and description)- -->
+          <div class="flex flex-col items-center gap-4 outline">
             <div
-              class="blur-xl bg-categories-gradient w-72 h-60 relative p-6 centered"
+              class="blur-xl bg-categories-gradient w-72 h-56 centered"
             ></div>
-            <div
-              class="blur-none absolute w-72 h-60 bg-white rounded centered py-6"
-            >
-              <div class="w-64 bg-categoryGray h-7 rounded-lg"></div>
+            <div class="blur-none absolute w-72 h-56 bg-white rounded">
+              <div class="relative centered h-full">
+                <div
+                  class="absolute top-6 w-64 bg-categoryGray h-7 rounded-lg"
+                ></div>
 
-              <img src="./assets/shared/click-capture-card.png" alt="" />
-              <div class="w-64 bg-categoryGray h-7 rounded-lg"></div>
+                <img
+                  src="./assets/shared/click-capture-card.svg"
+                  alt="Click capture card content."
+                  class="absolute"
+                />
+                <div
+                  class="absolute bottom-6 w-64 bg-categoryGray h-7 rounded-lg"
+                ></div>
+              </div>
             </div>
-            <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
-              1. Click Capture
-            </h4>
-            <p
-              class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
-            >
-              Once you install the Chrome extension, fire it up, and click
-              “Capture”.
-            </p>
+            <flex class="flex flex-col items-start gap-2">
+              <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
+                1. Click Capture
+              </h4>
+              <p
+                class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
+              >
+                Once you install the Chrome extension, fire it up, and click
+                “Capture”.
+              </p>
+            </flex>
           </div>
-
-          <div class="flex flex-col items-start gap-4">
-            <div class="blur-xl bg-categories-gradient w-72 h-60 relative">
-              <div class=""></div>
-            </div>
+          <!-- Perform actions category (card and description) -->
+          <div class="flex flex-col items-center gap-4">
             <div
-              class="blur-none absolute w-72 h-60 bg-white rounded centered"
+              class="blur-xl bg-categories-gradient w-72 h-48 centered"
             ></div>
-            <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
-              2. Perform Your Actions
-            </h4>
-            <p
-              class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
-            >
-              Once capturing, Wizardshot carefully monitors what you do to
-              understand how to document it.
-            </p>
+            <div class="blur-none absolute w-72 h-48 bg-white rounded">
+              <div class="relative centered h-full">
+                <img
+                  src="./assets/shared/perform-actions-category-card-bg.svg"
+                  alt="perform actions category card background"
+                  class="absolute object-cover h-full w-72"
+                />
+                <img
+                  src="./assets/shared/perform-actions-card.svg"
+                  alt="perform actions card content"
+                  class="p-4 z-40 absolute object-cover"
+                />
+                <img
+                  src="./assets/shared/black-cursor.svg"
+                  alt="cursor"
+                  class="absolute z-50"
+                />
+                <img
+                  src="./assets/shared/video-control.svg"
+                  alt="video controls"
+                  class="absolute z-50 bottom-0"
+                />
+              </div>
+            </div>
+            <flex class="flex flex-col items-start gap-2">
+              <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
+                2. Perform Your Actions
+              </h4>
+              <p
+                class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight -mb-4"
+              >
+                Once capturing, Wizardshot carefully monitors what you do to
+                understand how to document it.
+              </p>
+            </flex>
           </div>
-
-          <div class="flex flex-col items-start gap-4">
-            <div class="blur-xl bg-categories-gradient w-72 h-60 relative">
-              <div class=""></div>
-            </div>
+          <!-- yes -->
+          <div class="flex flex-col items-center gap-4 outline">
             <div
-              class="blur-none absolute w-72 h-60 bg-white rounded centered"
+              class="blur-xl bg-categories-gradient w-72 h-56 centered"
             ></div>
-            <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
-              3. ✅ Done. Article Written
-            </h4>
-            <p
-              class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
-            >
-              Wizardshot carefully crafts the perfect article based off your
-              actions recorded. Just click “Done” and we’ll write up the article
-              in a second.
-            </p>
+            <div class="blur-none absolute w-72 h-56 bg-white rounded">
+              <div class="relative centered h-full">
+                <img
+                  src="./assets/shared/creating-calender-booking.svg"
+                  alt="Creating calender booking"
+                  class="object-cover w-72 h-56"
+                />
+              </div>
+            </div>
+            <flex class="flex flex-col items-start gap-2">
+              <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
+                3. ✅ Done. Article Written
+              </h4>
+              <p
+                class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
+              >
+                Wizardshot carefully crafts the perfect article based off your
+                actions recorded. Just click “Done” and we’ll write up the
+                article in a second.
+              </p>
+            </flex>
           </div>
         </div>
+      </section>
+      <!-- more featrures section -->
+      <section class="centered relative">
+        <h3
+          class="font-jakarta-sans uppercase text-extrabig font-bold text-black leading-loose"
+        >
+          +32 more features
+        </h3>
+        <div class="h-px w-full bg-black"></div>
+        <h3
+          class="font-jakarta-sans uppercase text-upperbase font-bold text-black leading-loose"
+        >
+          including a kb integration
+        </h3>
       </section>
     </main>
   </body>

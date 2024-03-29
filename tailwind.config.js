@@ -12,6 +12,8 @@ module.exports = {
         buttonSecondary: "#B900",
         lightGray: "#1E293B",
         categoryGray: "#F3F3F3",
+        categoryLightGray: "#F6F6F6",
+        dottedPurple: "#AB96F8",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -31,12 +33,14 @@ module.exports = {
         base: "1rem",
         upperbase: "18px",
         big: "20px",
+        extrabig: "28px",
         bigger: "32px",
         large: "40px",
         extralarge: "58px",
       },
       maxWidth: {
         extralarge: "750px",
+        extafull: "120%",
       },
 
       backgroundImage: {
