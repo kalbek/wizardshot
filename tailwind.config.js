@@ -29,6 +29,7 @@ module.exports = {
         extraloose: "1.6",
       },
       fontSize: {
+        xs: "8px",
         sm: "14px",
         base: "1rem",
         upperbase: "18px",
