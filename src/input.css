@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap");
+
 @media (min-width: 768px) {
   /* on larger screens align the navigation menu on the middle of x-axis by default */
   #navigation {
@@ -34,4 +36,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.font-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
 }

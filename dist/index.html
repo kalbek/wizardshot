@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap"
-      rel="stylesheet"
-    />
+
     <script src="./script.js" defer></script>
   </head>
   <body class="py-4 md:py-12">
@@ -276,7 +273,7 @@
       </section>
       <!-- free unlimited & powerful section -->
       <section
-        class="relative bg-free-unlimited-grad text-darkGray font-jakarta-sans font-medium flex justify-between h-3 md:h-6 w-10/12 md:w-8/12 mt-7 mb-48"
+        class="relative bg-free-unlimited-gradient text-darkGray font-jakarta-sans font-medium flex justify-between h-3 md:h-6 w-10/12 md:w-7/12 mt-7 md:mt-36 mb-9 md:mb-7"
       >
         <div
           class="flex justify-between items-center gap-1 text-darkGray font-jakarta-sans font-medium"
@@ -312,8 +309,154 @@
         <img
           src="./assets/shared/colored-arrow.svg"
           alt="colored arrorw indicatting to a section."
-          class="absolute -right-1 -bottom-40 md:-bottom-36 md:-right-12"
+          class="absolute z-50 -right-1 -bottom-40 md:-bottom-36 md:-right-12"
         />
+      </section>
+      <!-- testimony section -->
+      <section
+        class="relative centered gap-10 outline outline-6 rounded w-11/12 md:w-8/12 h-110 md:h-115 mt-10 mb-20"
+      >
+        <h3
+          class="absolute top-1 text-center font-jakarta-sans font-extrabold text-bigger md:mt-7 leading-extralight md:text-large md:leading-loose w-8/12 text-graySecondary"
+        >
+          Create A Detailed Tutorial in Less than 3 clicks
+        </h3>
+        <!-- install windshot button -->
+        <div class="blur-xl bg-testimonial-gradient w-80 md:w-115 h-16"></div>
+        <div class="blur-none absolute w-11/12 md:w-115 h-16">
+          <div class="relative">
+            <button
+              class="absolute w-full flex justify-center items-center gap-2 bg-buttonPrimary px-7 md:px-20 py-7 md:py-5 rounded-lg"
+            >
+              <img src="./assets/shared/chrome-icon.svg" alt="chrome icon" />
+              <a
+                class="text-white font-mulish w-auto text-left text-bigbase md:text-bigger leading-extraloose"
+                href="#"
+              >
+                Install Wizardshot
+              </a>
+            </button>
+          </div>
+        </div>
+        <!-- testimonial quotes and rating-->
+        <div
+          class="absolute bottom-16 capitalize text-sm leading-tight md:text-extrabig text-center text-graySecondary"
+        >
+          <div class="centered">
+            <blockquote class="font-extrabold">
+              "Has helped us write help docs 100x faster"
+            </blockquote>
+            <span>– Dany River, Cartier Informatie</span>
+            <span class="mt-2">
+              <ul class="flex gap-1">
+                <li>
+                  <img
+                    src="./assets/shared/star.svg"
+                    alt="A star for rating."
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/shared/star.svg"
+                    alt="A star for rating."
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/shared/star.svg"
+                    alt="A star for rating."
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/shared/star.svg"
+                    alt="A star for rating."
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/shared/star.svg"
+                    alt="A star for rating."
+                  />
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- common questions section -->
+      <section class="centered gap-4 w-11/12 md:max-w-3xl mb-12 px-6">
+        <h2 class="font-jakarta-sans font-bigger leading-loose font-extrabold">
+          Common Questions
+        </h2>
+        <!-- Q#1 -->
+        <div
+          class="pt-4 font-inter flex flex-col items-start gap-4 text-darkBaseGray"
+        >
+          <div class="flex justify-between w-full">
+            <h4 class="text-base font-medium">What is Wizardshot?</h4>
+            <img src="./assets/shared/chevron-up.svg" alt="chevron up" />
+          </div>
+          <p class="text-sm">
+            Wizardshot is a web app & chrome extension . that allows you to
+            create step-by-step tutorials simply by capturing your screen.
+          </p>
+        </div>
+        <!-- A custom <hr/> -->
+        <div class="w-full h-px bg-categoryGray"></div>
+        <!-- Q#2 -->
+        <div
+          class="pt-4 font-inter flex flex-col items-start gap-4 text-darkBaseGray"
+        >
+          <div class="flex justify-between w-full">
+            <h4 class="text-base font-medium">How is Wizardshot Free?</h4>
+            <img src="./assets/shared/chevron-up.svg" alt="chevron up" />
+          </div>
+          <p class="text-sm leading-10">
+            The costs to run a service is really inexpensive as most of the
+            processing happens in the Chrome extension. Really - all that we
+            have to pay for is<u> super-secure hosting, awesome 24/7 support</u>
+            and that’s it.
+            <span class="font-semibold">
+              We built Wizardshot as a stand-alone product with a deep
+              <u> Helpjuice Knowledge Base integration.</u></span
+            >
+          </p>
+        </div>
+        <!-- A custom <hr/> -->
+        <div class="w-full h-px bg-categoryGray"></div>
+        <!-- Q#3 -->
+        <div
+          class="pt-4 flex justify-between w-full font-inter text-darkBaseGray"
+        >
+          <h4 class="text-base font-medium">Is my data secure?</h4>
+          <img src="./assets/shared/chevron-down.svg" alt="chevron down" />
+        </div>
+        <!-- A custom <hr/> -->
+        <div class="w-full h-px bg-categoryGray"></div>
+        <div
+          class="pt-4 flex flex-col md:flex-row gap-2 items-center md:justify-between w-full font-inter text-darkBaseGray"
+        >
+          <h4 class="text-sm font-bold font-mulish text-black">
+            Curious to learn more?
+          </h4>
+
+          <button
+            class="flex justify-center items-center gap-2 bg-buttonSecondary px-6 py-2 rounded-lg"
+          >
+            <a
+              class="text-white font-bold font-mulish w-auto text-left text-sm leading-extraloose"
+              href="#"
+            >
+              Visit Help & Community Center
+            </a>
+          </button>
+        </div>
+
+        <!-- Q#4 -->
+        <div class="flex justify-between w-full font-inter text-darkBaseGray">
+          <h4 class="text-base font-medium"></h4>
+        </div>
       </section>
     </main>
   </body>
