@@ -17,6 +17,7 @@ module.exports = {
         categoryLightGray: "#F6F6F6",
         dottedPurple: "#AB96F8",
         colorTryText: "#F9FAFB",
+        lightFooter: "#0D0D0D",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -33,6 +34,7 @@ module.exports = {
         sm: "14px",
         base: "1rem",
         upperbase: "18px",
+        largebase: "22px",
         big: "20px",
         bigbase: "24px",
         extrabig: "28px",

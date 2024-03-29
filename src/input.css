@@ -38,6 +38,26 @@
   align-items: center;
 }
 
+.colstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.colend {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+.colendr {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: end;
+}
+
 .font-jakarta-sans {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
