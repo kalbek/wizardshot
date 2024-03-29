@@ -16,6 +16,7 @@ module.exports = {
         categoryGray: "#F3F3F3",
         categoryLightGray: "#F6F6F6",
         dottedPurple: "#AB96F8",
+        colorTryText: "#F9FAFB",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
