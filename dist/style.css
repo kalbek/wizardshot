@@ -1553,6 +1553,10 @@ video {
     width: auto;
   }
 
+  .md\:w-9\/12 {
+    width: 75%;
+  }
+
   .md\:max-w-3xl {
     max-width: 48rem;
   }
