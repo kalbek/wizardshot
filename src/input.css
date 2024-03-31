@@ -10,16 +10,19 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   /* for larger screens, make the login section always visible  */
   #login {
     display: block;
   }
 }
+
 @media (max-width: 768px) {
   /* for smaller screen, always hide the login text */
   #login-text {
     display: none;
   }
+
   #navigation {
     height: 100vh;
   }
@@ -28,7 +31,6 @@
 .schoolbell-regular {
   font-family: "Schoolbell", cursive;
   font-weight: 600;
-  font-style: bold;
 }
 
 .centered {
@@ -51,6 +53,7 @@
   justify-content: flex-end;
   align-items: end;
 }
+
 .colendr {
   display: flex;
   flex-direction: column-reverse;
@@ -62,6 +65,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
+
   /* align-items: start; */
 }
 
