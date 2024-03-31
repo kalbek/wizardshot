@@ -15,22 +15,19 @@
       <section class="flex justify-between w-full px-6">
         <div class="flex gap-2">
           <img src="./assets/shared/logo.svg" alt="wizardshot logo" />
-          <h1 class="font-bold jakarta-sans text-lg text-lightGray">
+          <p class="font-bold jakarta-sans text-lg text-gray-light">
             Wizardshot
-          </h1>
+          </p>
         </div>
-        <img
-          class="flex md:hidden"
-          id="menu"
-          src="./assets/shared/accordion-menu.svg"
-          alt="Open mobile menu."
-        />
-        <img
-          class="hidden mr-1"
-          id="close"
-          src="./assets/shared/close.svg"
-          alt="close mobile menu."
-        />
+        <button id="menu" class="flex md:hidden" aria-label="Open mobile menu">
+          <img
+            src="./assets/shared/accordion-menu.svg"
+            alt="Open mobile menu."
+          />
+        </button>
+        <button id="close" class="hidden mr-1" aria-label="Close mobile menu">
+          <img src="./assets/shared/close.svg" alt="close mobile menu." />
+        </button>
       </section>
       <!-- Login section and install wizardshot button-->
       <section
@@ -38,7 +35,7 @@
         class="absolute hidden right-1/4 md:right-28 top-1/2 mt-8 md:mt-0 md:top-5"
       >
         <div class="flex items-center gap-3.5">
-          <p id="login-text" class="text-muted text-base mt-6">
+          <p id="login-text" class="text-gray-muted text-base mt-6">
             <a href="#">Login</a>
           </p>
 
@@ -67,13 +64,15 @@
       <!-- Navigations (mobile and desktop) -->
       <nav
         id="navigation"
+        aria-label="Main Navigation"
         class="w-full hidden md:w-auto md:flex flex-col md:absolute top-1 mt-5 md:mt-10"
       >
         <div class="w-full h-px bg-gray-300 md:hidden"></div>
         <ul
+          role="navigation"
           class="pt-5 pb-6 pl-6 md:flex gap-3 font-open-sans text-blackTransparent"
         >
-          <li class="w-fit md:px-3 py-1.5 md:py-0 text-darkGray font-semibold">
+          <li class="w-fit md:px-3 py-1.5 md:py-0 text-gray-dark font-semibold">
             <a href=""><u>Home</u></a>
           </li>
           <li class="w-fit md:px-3 py-1.5 md:py-0 mt-7 md:mt-0">
@@ -99,11 +98,11 @@
       >
         Your Magic Wand for Instant Documentation
       </h1>
-      <h3
-        class="font-semibold text-muted uppercase text-big md:text-base leading-loose md:leading-normal mt-2.5 text-center px-12"
+      <h4
+        class="font-semibold text-gray-muted uppercase text-big md:text-base leading-loose md:leading-normal mt-2.5 text-center px-12"
       >
         Turn ANY process into a simple step-by step Guide
-      </h3>
+      </h4>
       <!-- Wizardshot install button -->
       <div class="flex flex-col gap-1 items-center mt-4 md:mt-8">
         <button
@@ -125,6 +124,7 @@
         <video
           poster="./assets/shared/hero-tutorial-vid.png"
           class="object-cover h-48 w-96 md:h-largeVideoFrame md:w-auto p-2.5 rounded md:rounded-2xl"
+          caption="hey folks"
         ></video>
         <img
           src="./assets/shared/curved-arrow.svg"
@@ -146,127 +146,139 @@
           for YOU.
         </h2>
         <!-- categories card section -->
-        <div
+        <ul
           class="my-10 flex flex-col md:flex-row w-9/12 justify-between items-center md:w-10/12 gap-8"
         >
           <!-- Click capture category (card and description)- -->
-          <div class="flex flex-col items-center gap-4">
-            <div
-              class="blur-xl bg-categories-gradient w-72 h-56 centered"
-            ></div>
-            <div class="blur-none absolute w-72 h-56 bg-white rounded">
-              <div class="relative centered h-full">
-                <div
-                  class="absolute top-6 w-64 bg-categoryGray h-7 rounded-lg"
-                ></div>
-
-                <img
-                  src="./assets/shared/click-capture-card.svg"
-                  alt="Click capture card content."
-                  class="absolute"
-                />
-                <div
-                  class="absolute bottom-6 w-64 bg-categoryGray h-7 rounded-lg"
-                ></div>
-              </div>
-            </div>
-            <flex class="flex flex-col items-start gap-2">
-              <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
-                1. Click Capture
-              </h4>
-              <p
-                class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
-              >
-                Once you install the Chrome extension, fire it up, and click
-                “Capture”.
-              </p>
-            </flex>
-          </div>
-          <!-- Perform actions category (card and description) -->
-          <div class="flex flex-col items-center gap-4">
-            <div
-              class="blur-xl bg-categories-gradient w-72 h-48 centered"
-            ></div>
-            <div class="blur-none absolute w-72 h-48 bg-white rounded">
-              <div class="relative centered h-full">
-                <img
-                  src="./assets/shared/perform-actions-category-card-bg.svg"
-                  alt="perform actions category card background"
-                  class="absolute object-cover h-full w-72"
-                />
-                <img
-                  src="./assets/shared/perform-actions-card.svg"
-                  alt="perform actions card content"
-                  class="p-4 z-40 absolute object-cover"
-                />
-                <img
-                  src="./assets/shared/black-cursor.svg"
-                  alt="cursor"
-                  class="absolute z-50"
-                />
-                <img
-                  src="./assets/shared/video-control.svg"
-                  alt="video controls"
-                  class="absolute z-50 bottom-0"
-                />
-              </div>
-            </div>
-            <flex class="flex flex-col items-start gap-2">
-              <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
-                2. Perform Your Actions
-              </h4>
-              <p
-                class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight -mb-4"
-              >
-                Once capturing, Wizardshot carefully monitors what you do to
-                understand how to document it.
-              </p>
-            </flex>
-          </div>
-          <!-- yes -->
-          <div class="flex flex-col items-center gap-4">
-            <div
-              class="blur-xl bg-categories-gradient w-72 h-56 centered"
-            ></div>
-            <div class="blur-none absolute w-72 h-56 bg-white rounded">
-              <!-- top section for tutorial header cover; -->
+          <li>
+            <div class="flex flex-col items-center gap-4">
               <div
-                class="z-50 relative w-full h-12 bg-white border-b opacity-60"
-              >
-                <p
-                  class="font-bold font-sans text-xs m-2 asolute top-2 text-black"
-                >
-                  Tutorial: Creating a Calendar Booking Link with Google
-                </p>
-                <div
-                  class="bg-categoryGray absolute top-3 left-2 h-2.5 w-2/6 rounded-sm"
-                ></div>
-                <div
-                  class="bg-categoryGray absolute top-6 left-2 h-2.5 w-1/6 rounded-sm"
-                ></div>
+                class="blur-xl bg-categories-gradient w-72 h-56 centered"
+              ></div>
+              <div class="blur-none absolute w-72 h-56 bg-white rounded">
+                <div class="relative centered h-full">
+                  <div
+                    class="absolute top-6 w-64 bg-gray-category h-7 rounded-lg"
+                  ></div>
+
+                  <img
+                    src="./assets/shared/click-capture-card.svg"
+                    alt="Click capture card content."
+                    class="absolute"
+                  />
+                  <div
+                    class="absolute bottom-6 w-64 bg-gray-category h-7 rounded-lg"
+                  ></div>
+                </div>
               </div>
-              <div class="relative centered h-full">
-                <img
-                  src="./assets/shared/creating-calender-booking.svg"
-                  alt="Creating calender booking"
-                  class="object-contain w-72 h-56 absolute -top-10"
-                />
+              <flex class="flex flex-col items-start gap-2">
+                <h3
+                  class="text-upperbase text-gray-base font-semibold mt-16 ml-2"
+                >
+                  1. Click Capture
+                </h3>
+                <p
+                  class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
+                >
+                  Once you install the Chrome extension, fire it up, and click
+                  “Capture”.
+                </p>
+              </flex>
+            </div>
+          </li>
+          <!-- Perform actions category (card and description) -->
+          <li>
+            <div class="flex flex-col items-center gap-4">
+              <div
+                class="blur-xl bg-categories-gradient w-72 h-48 centered"
+              ></div>
+              <div class="blur-none absolute w-72 h-48 bg-white rounded">
+                <div class="relative centered h-full">
+                  <img
+                    src="./assets/shared/perform-actions-category-card-bg.svg"
+                    alt="perform actions category card background"
+                    class="absolute object-cover h-full w-72"
+                  />
+                  <img
+                    src="./assets/shared/perform-actions-card.svg"
+                    alt="perform actions card content"
+                    class="p-4 z-40 absolute object-cover"
+                  />
+                  <img
+                    src="./assets/shared/black-cursor.svg"
+                    alt="cursor"
+                    class="absolute z-50"
+                  />
+                  <img
+                    src="./assets/shared/video-control.svg"
+                    alt="video controls"
+                    class="absolute z-50 bottom-0"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-2">
+                <h4
+                  class="text-upperbase text-gray-base font-semibold mt-16 ml-2"
+                >
+                  2. Perform Your Actions
+                </h4>
+                <p
+                  class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight -mb-4"
+                >
+                  Once capturing, Wizardshot carefully monitors what you do to
+                  understand how to document it.
+                </p>
               </div>
             </div>
-            <flex class="relative flex flex-col items-start gap-2">
-              <h4 class="text-upperbase text-grayBase font-semibold mt-16 ml-2">
-                3. ✅ Done. Article Written
-              </h4>
-              <p
-                class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
-              >
-                Wizardshot carefully crafts the perfect article based off your
-                actions recorded. Just click “Done” and we’ll write up the
-                article in a second.
-              </p>
-            </flex>
-          </div>
-        </div>
+          </li>
+          <!-- Done! Article category -->
+          <li>
+            <div class="flex flex-col items-center gap-4">
+              <div
+                class="blur-xl bg-categories-gradient w-72 h-56 centered"
+              ></div>
+              <div class="blur-none absolute w-72 h-56 bg-white rounded">
+                <!-- top section for tutorial header cover; -->
+                <div
+                  class="z-50 relative w-full h-12 bg-white border-b opacity-60"
+                >
+                  <p
+                    class="font-bold font-sans text-xs m-2 asolute top-2 text-black"
+                  >
+                    Tutorial: Creating a Calendar Booking Link with Google
+                  </p>
+                  <div
+                    class="bg-gray-category absolute top-3 left-2 h-2.5 w-2/6 rounded-sm"
+                  ></div>
+                  <div
+                    class="bg-gray-category absolute top-6 left-2 h-2.5 w-1/6 rounded-sm"
+                  ></div>
+                </div>
+                <div class="relative centered h-full">
+                  <img
+                    src="./assets/shared/creating-calender-booking.svg"
+                    alt="Creating calender booking"
+                    class="object-contain w-72 h-56 absolute -top-10"
+                  />
+                </div>
+              </div>
+              <div class="relative flex flex-col items-start gap-2">
+                <h4
+                  class="text-upperbase text-gray-base font-semibold mt-16 ml-2"
+                >
+                  3. ✅ Done. Article Written
+                </h4>
+                <p
+                  class="text-blackTransparent text-sm max-w-72 font-open-sans leading-tight"
+                >
+                  Wizardshot carefully crafts the perfect article based off your
+                  actions recorded. Just click “Done” and we’ll write up the
+                  article in a second.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <!-- more featrures section -->
       <section class="centered relative">
@@ -289,10 +301,10 @@
       </section>
       <!-- free unlimited & powerful section -->
       <section
-        class="relative bg-free-unlimited-gradient text-darkGray font-jakarta-sans font-medium flex justify-between h-3 md:h-6 w-10/12 md:w-7/12 mt-7 md:mt-36 mb-9 md:mb-7"
+        class="relative bg-free-unlimited-gradient text-gray-dark font-jakarta-sans font-medium flex justify-between h-3 md:h-6 w-10/12 md:w-7/12 mt-7 md:mt-36 mb-9 md:mb-7"
       >
         <div
-          class="flex justify-between items-center gap-1 text-darkGray font-jakarta-sans font-medium"
+          class="flex justify-between items-center gap-1 text-gray-dark font-jakarta-sans font-medium"
         >
           <p class="capitalize text-big leading-tight md:text-large">
             <u>Free</u>
@@ -333,7 +345,7 @@
         class="relative centered gap-10 outline outline-6 rounded w-11/12 md:w-8/12 h-110 md:h-115 mt-10 mb-20"
       >
         <h3
-          class="absolute top-1 text-center font-jakarta-sans font-extrabold text-bigger md:mt-7 leading-extralight md:text-large md:leading-loose w-11/12 text-graySecondary"
+          class="absolute top-1 text-center font-jakarta-sans font-extrabold text-bigger md:mt-7 leading-extralight md:text-large md:leading-loose w-11/12 text-gray-secondary"
         >
           Create A Detailed Tutorial in Less than 3 clicks
         </h3>
@@ -356,7 +368,7 @@
         </div>
         <!-- testimonial quotes and rating-->
         <div
-          class="absolute bottom-16 capitalize text-sm leading-tight md:text-extrabig text-center text-graySecondary"
+          class="absolute bottom-16 capitalize text-sm leading-tight md:text-extrabig text-center text-gray-secondary"
         >
           <div class="centered">
             <blockquote class="font-extrabold">
@@ -419,7 +431,7 @@
           </p>
         </div>
         <!-- A custom <hr/> -->
-        <div class="w-full h-px bg-categoryGray"></div>
+        <div class="w-full h-px bg-gray-category"></div>
         <!-- Q#2 -->
         <div
           class="pt-4 font-inter flex flex-col items-start gap-4 text-darkBaseGray"
@@ -440,7 +452,7 @@
           </p>
         </div>
         <!-- A custom <hr/> -->
-        <div class="w-full h-px bg-categoryGray"></div>
+        <div class="w-full h-px bg-gray-category"></div>
         <!-- Q#3 -->
         <div
           class="pt-4 flex justify-between w-full font-inter text-darkBaseGray"
@@ -449,7 +461,7 @@
           <img src="./assets/shared/chevron-down.svg" alt="chevron down" />
         </div>
         <!-- A custom <hr/> -->
-        <div class="w-full h-px bg-categoryGray"></div>
+        <div class="w-full h-px bg-gray-category"></div>
         <div
           class="pt-4 flex flex-col md:flex-row gap-2 items-center md:justify-between w-full font-inter text-darkBaseGray"
         >
@@ -476,7 +488,7 @@
       </section>
       <!-- try wizardshot section -->
       <section class="w-full flex flex-col-reverse items-center">
-        <div class="w-full md:w-11/12 h-px bg-graySecondary"></div>
+        <div class="w-full md:w-11/12 h-px bg-gray-secondary"></div>
         <div
           class="relative centered w-10/12 h-52 md:h-36 bg-black rounded-t-lg py-8 px-4 md:px-12"
         >
@@ -490,7 +502,7 @@
               <h1 class="text-bigbase font-medium md:text-extrabig text-white">
                 Create Tutorials in 3 Clicks.
               </h1>
-              <p class="text-sm leading-loose text-muted max-w-lg">
+              <p class="text-sm leading-loose text-gray-muted max-w-lg">
                 With WizardShot, You Click Capture, And We’ll Capture What’s
                 Happening on Your Screen And Turn It Into A Tutorial.
               </p>
@@ -595,16 +607,18 @@
             <div class="centered md:items-end w-full md:w-fit">
               <!-- A custom hr on the footer  -->
               <div
-                class="flex md:hidden w-full h-px bg-categoryGray font-medium mt-12 mb-8"
+                class="flex md:hidden w-full h-px bg-gray-category font-medium mt-12 mb-8"
               ></div>
-              <p>📞+1 (833) 387 3877</p>
+              <span role="img" area-label="telephone">
+                📞+1 (833) 387 3877
+              </span>
               <a href="mailto:success@wizardshot.com" class="mb-0 md:mb-2.5"
                 >✉️ success@wizardshot.com</a
               >
             </div>
             <div class="colstartr md:colendr">
               <div
-                class="flex gap-16 mt-10 md:flex-row-reverse font-bold font-mulish text-muted mr-0 md:mr-8"
+                class="flex gap-16 mt-10 md:flex-row-reverse font-bold font-mulish text-gray-muted mr-0 md:mr-8"
               >
                 <a href="#">Login</a>
                 <a href="#">Sign Up</a>
@@ -618,7 +632,9 @@
         </div>
         <!-- contact and social media section -->
       </div>
-      <p class="mt-8 mb-20 md:mb-12 text-mutedSecondary md:text-lightFooter">
+      <p
+        class="mt-8 mb-20 md:mb-12 text-gray-mutedSecondary md:text-lightFooter"
+      >
         &copy;2024 Wizardshot – All rights reserved.
       </p>
     </footer>

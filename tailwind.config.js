@@ -4,21 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        muted: "#666666",
-        darkGray: "#4F4F4F",
-        graySecondary: "#212020",
-        mutedSecondary: "#98A2B3",
-        grayBase: "#363636",
-        darkBaseGray: "#0F172A",
+        // General Colors
+        gray: {
+          base: "#363636",
+          dark: "#0F172A",
+          light: "#1E293B",
+          secondary: "#212020",
+          category: "#F3F3F3",
+          muted: "#666666",
+          mutedSecondary: "#98A2B3",
+        },
         blackTransparent: "rgba(0, 0, 0, 0.56)",
-        buttonPrimary: "#18181C",
-        buttonSecondary: "#03132E",
-        lightGray: "#1E293B",
-        categoryGray: "#F3F3F3",
-        categoryLightGray: "#F6F6F6",
         dottedPurple: "#AB96F8",
         colorTryText: "#F9FAFB",
         lightFooter: "#0D0D0D",
+        // Buttons
+        buttonPrimary: "#18181C",
+        buttonSecondary: "#03132E",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
