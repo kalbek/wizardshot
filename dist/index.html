@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <script src="./script.js" defer></script>
   </head>
-  <body class="py-4 md:py-12">
+  <body class="pt-4 md:pt-12 pb-1">
     <header class="flex flex-col items-start py-2 w-full md:px-28">
       <!-- Logo and mobile menu icons  -->
       <section class="flex justify-between w-full px-6">
@@ -118,13 +115,13 @@
         </button>
       </div>
       <!-- video frame -->
+
       <div
         class="bg-custom-gradient rounded-2xl relative mt-24 md:mt-20 md:w-9/12 mx-6"
       >
         <video
           poster="./assets/shared/hero-tutorial-vid.png"
           class="object-cover h-48 w-96 md:h-largeVideoFrame md:w-auto p-2.5 rounded md:rounded-2xl"
-          caption="hey folks"
         ></video>
         <img
           src="./assets/shared/curved-arrow.svg"
@@ -281,30 +278,39 @@
         </ul>
       </section>
       <!-- more featrures section -->
-      <section class="centered relative">
-        <h3
-          class="font-jakarta-sans uppercase text-extrabig font-bold text-black leading-loose"
-        >
-          +32 more features
-        </h3>
-        <div class="h-px w-full bg-black"></div>
-        <h3
-          class="font-jakarta-sans uppercase text-upperbase font-bold text-black leading-loose mt-2"
-        >
-          including a kb integration
-        </h3>
+      <section class="relative md:w-7/12 centered">
+        <div class="centered">
+          <h3
+            class="font-jakarta-sans uppercase text-extrabig font-bold text-black leading-loose"
+          >
+            +32 more features
+          </h3>
+          <div class="h-px w-full bg-black"></div>
+          <h3
+            class="font-jakarta-sans uppercase text-upperbase font-bold text-black leading-loose mt-2"
+          >
+            including a kb integration
+          </h3>
+        </div>
         <div
-          class="absolute -right-10 -bottom-4 md:-right-24 -md:bottom-14 md:scale-125"
+          class="-mt-10 -mr-89 md:mr-0 md:mt-28 md:absolute md:right-32 w-[35px] h-[36px]"
         >
-          <img src="./assets/shared/avatar.svg" alt="avatar" />
+          <img
+            src="./assets/shared/avatar.svg"
+            alt="avatar"
+            class="scale-125"
+          />
         </div>
       </section>
       <!-- free unlimited & powerful section -->
       <section
-        class="relative bg-free-unlimited-gradient text-gray-dark font-jakarta-sans font-medium flex justify-between h-3 md:h-6 w-10/12 md:w-7/12 mt-7 md:mt-36 mb-9 md:mb-7"
+        class="relative opacity-60 text-gray-dark font-jakarta-sans font-medium flex justify-between h-6.5 md:h-12 w-89 md:w-173 mt-7 md:mt-36 mb-9 md:mb-7 my-auto"
       >
         <div
-          class="flex justify-between items-center gap-1 text-gray-dark font-jakarta-sans font-medium"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 bg-free-unlimited-gradient w-87 placeholder: h-3.5 md:h-6 flex justify-between -blue-600 absolute-w"
+        ></div>
+        <div
+          class="flex z-50 justify-between items-center gap-1 text-gray-dark font-jakarta-sans font-medium"
         >
           <p class="capitalize text-big leading-tight md:text-large">
             <u>Free</u>
@@ -313,7 +319,7 @@
             <p class="text-xs md:text-sm leading-loose">Free <br />Forever</p>
           </div>
         </div>
-        <div class="flex justify-between items-center gap-1">
+        <div class="flex z-50 justify-between items-center gap-1">
           <p class="capitalize text-big leading-tight md:text-large">
             <u>Unlimited</u>
           </p>
@@ -323,7 +329,7 @@
             </p>
           </div>
         </div>
-        <div class="flex justify-between items-center gap-1">
+        <div class="flex z-50 justify-between items-center gap-1">
           <p class="capitalize text-big leading-tight md:text-large">
             <u>Powerful</u>
           </p>
@@ -336,22 +342,25 @@
         <!-- colored, curved down arrow -->
         <img
           src="./assets/shared/colored-arrow.svg"
-          alt="colored arrorw indicatting to a section."
-          class="absolute z-50 -right-1 -bottom-40 md:-bottom-36 md:-right-12"
+          alt="colored arrow indicating to a section."
+          class="absolute z-50 right-4 -bottom-40 md:-bottom-36 md:-right-12"
         />
       </section>
       <!-- testimony section -->
       <section
-        class="relative centered gap-10 outline outline-6 rounded w-11/12 md:w-8/12 h-110 md:h-115 mt-10 mb-20"
+        class="relative centered gap-10 outline outline-6 rounded w-11/12 md:max-w-custom_lg h-110 md:h-115 mt-10 mb-20"
       >
         <h3
-          class="absolute top-1 text-center font-jakarta-sans font-extrabold text-bigger md:mt-7 leading-extralight md:text-large md:leading-loose w-11/12 text-gray-secondary"
+          class="absolute top-1 text-center font-jakarta-sans font-extrabold text-bigger md:mt-7 leading-extralight md:text-large md:leading-loose max-w-78 md:max-w-122 text-gray-secondary"
         >
           Create A Detailed Tutorial in Less than 3 clicks
         </h3>
+
         <!-- install windshot button -->
-        <div class="blur-xl bg-testimonial-gradient w-80 md:w-115 h-16"></div>
-        <div class="blur-none absolute w-11/12 md:w-115 h-16">
+        <div
+          class="blur-xl bg-testimonial-gradient w-80 md:w-111 h-24 md:h-24"
+        ></div>
+        <div class="blur-none absolute w-80 md:w-111 h-24 md:h-24">
           <div class="relative">
             <button
               class="absolute w-full flex justify-center items-center gap-2 bg-buttonPrimary px-7 md:px-20 py-7 md:py-5 rounded-lg"
@@ -413,8 +422,10 @@
         </div>
       </section>
       <!-- common questions section -->
-      <section class="centered gap-4 w-11/12 md:max-w-3xl mb-32 px-6">
-        <h2 class="font-jakarta-sans font-bigger leading-loose font-extrabold">
+      <section class="centered gap-4 w-89 md:w-200 mb-32 px-6">
+        <h2
+          class="font-jakarta-sans text-bigger leading-loose font-extrabold text-center w-89"
+        >
           Common Questions
         </h2>
         <!-- Q#1 -->
@@ -609,12 +620,17 @@
               <div
                 class="flex md:hidden w-full h-px bg-gray-category font-medium mt-12 mb-8"
               ></div>
-              <span role="img" area-label="telephone">
-                📞+1 (833) 387 3877
-              </span>
-              <a href="mailto:success@wizardshot.com" class="mb-0 md:mb-2.5"
-                >✉️ success@wizardshot.com</a
+              <div class="flex">
+                <span role="img" area-label="telephone"> 📞 </span>
+                <p>+1 (833) 387 3877</p>
+              </div>
+              <a
+                href="mailto:success@wizardshot.com"
+                class="flex gap-1 mb-0 md:mb-2.5"
               >
+                <span role="img" area-label="email">✉️</span>
+                <p>success@wizardshot.com</p>
+              </a>
             </div>
             <div class="colstartr md:colendr">
               <div
@@ -633,7 +649,7 @@
         <!-- contact and social media section -->
       </div>
       <p
-        class="mt-8 mb-20 md:mb-12 text-gray-mutedSecondary md:text-lightFooter"
+        class="mt-8 md:mt-14 mb-12 text-gray-mutedSecondary md:text-lightFooter"
       >
         &copy;2024 Wizardshot – All rights reserved.
       </p>

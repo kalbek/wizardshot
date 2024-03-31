@@ -49,6 +49,8 @@ module.exports = {
       maxWidth: {
         extralarge: '750px',
         extafull: '120%',
+        custom_lg: '864px',
+        custom_md: '692px',
       },
 
       backgroundImage: {
@@ -66,12 +68,22 @@ module.exports = {
         largeVideoFrame: '829px',
       },
       spacing: {
+        6.5: '26px',
         8.9: '30px',
         10.5: '80.5%',
         50: '190px',
+        78: '315px',
+        87: '365px',
+        89: '375px',
+        91: '365px',
+        111: '467px',
         110: '430px',
         112: '474px',
         115: '495px',
+        122: '583px',
+        168: '673px',
+        173: '692px',
+        200: '800px',
       },
       outlineWidth: {
         6: '6px',
